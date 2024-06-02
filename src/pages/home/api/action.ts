@@ -1,5 +1,8 @@
 import { FormSchema } from './model'
+import axios from '@/shared/api/client'
 
 export function onSubmit(values: FormSchema) {
-  console.log(values)
+  return axios.post('/login', {
+    ...values,
+  })
 }

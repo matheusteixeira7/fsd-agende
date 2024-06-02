@@ -1,3 +1,4 @@
+import { Footer } from './Footer'
 import { UserForm } from './UserForm'
 
 export const HomePage = () => {
@@ -20,24 +21,14 @@ export const HomePage = () => {
             <h2 className="text-3xl font-medium leading-9 tracking-tight text-white md:text-blue-500">
               Que bom ter você conosco!
             </h2>
+
             <p className="text-white md:text-gray-600">
               Para começar, identifique-se com a sua conta de acesso utilizada
               no Aplicativo Vitta!
             </p>
 
             <UserForm />
-
-            <div className="text-white md:text-gray-600">
-              <p className="text-center block mt-5">Disponível para:</p>
-              <img
-                alt="Logomarca das empresas disponíveis"
-                className="mx-auto mt-2"
-                src="/src/shared/assets/empresas.png"
-              />
-              <p className="text-center block mt-2 text-sm">
-                2024 - Vitta Tecnologia em Saúde S.A. - ANS 42259-2
-              </p>
-            </div>
+            <Footer />
           </div>
         </div>
       </section>
