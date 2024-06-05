@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { cpf } from 'cpf-cnpj-validator'
 
-export const formSchema = z.object({
+export const schema = z.object({
     document: z
         .string()
         .refine((document) => {
@@ -13,4 +13,4 @@ export const formSchema = z.object({
     password: z.string().min(8, 'A senha precisa ter ao menos 8 caracteres'),
 })
 
-export type FormSchema = z.infer<typeof formSchema>
+export type FormSchema = z.infer<typeof schema>

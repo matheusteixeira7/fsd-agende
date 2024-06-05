@@ -1,5 +1,5 @@
-import { Footer } from './Footer'
-import { LoginForm } from './LoginForm'
+import { Footer } from './footer'
+import { LoginForm } from './login-form'
 
 export const LoginContent = () => {
     return (
